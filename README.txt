@@ -16,9 +16,19 @@ run:
   results for the reference machine, a 3.2-GHz Apple M1~Max processor
   with 64~GB of memory and running the OS~X operating system.
 
-  For reference, the smallest instance of each benchmark is at or
-  beyond the outer reaches of all proof-generating CDCL SAT solvers.
-  It can be seen that these quite trivial for tbsat.
+  The displayed fields are:
+        Size: The scaling parameter for the benchmark
+      In Var: The number of variables in the input CNF file
+      In Cls: The number of clauses in the input CNF file
+     SAT Sec: The runtime for tbsat
+      Pf Cls: The number of clasues in the generated proof
+     Chk Sec: The time required to check the proof using lrat-check
+
+  The smallest instance of each benchmark is at or beyond the outer
+  reaches of all proof-generating CDCL SAT solvers.  It can be seen
+  that these quite trivial for tbsat, and that tbsat can scale to much
+  larger instances for each benchmark.  The performance with Gaussian
+  elimination is especially noteworthy.
 
 clean:
   Remove all but the original files
