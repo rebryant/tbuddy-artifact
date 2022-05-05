@@ -46,6 +46,8 @@ tbuddy.a: $(TFILES)
 	$(CXX) $(CFLAGS) $(CXXFLAGS) $(TFLAGS) $(INC) -c $< -o $@
 
 clean:
-	 rm -f *.a *.o *.to *~
+	rm -f *.a *.o *.to *~
+	rm -rf *.dSYM
+
 
 
