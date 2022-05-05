@@ -16,10 +16,7 @@ TFILES = tbdd.to prover.to bddio.to bvec.to bddop.to cache.to fdd.to ilist.to \
 	imatrix.to kernel.to pairs.to prime.to reorder.to tree.to cppext.to pseudoboolean.to
 
 all: buddy.a tbuddy.a
-	rm -rf $(LDIR)
-	mkdir $(LDIR)
 	rm -rf $(IDIR)
-	mkdir $(IDIR)
 	cp -p buddy.a $(LDIR)
 	cp -p tbuddy.a $(LDIR)
 	cp -p bdd.h $(IDIR)
