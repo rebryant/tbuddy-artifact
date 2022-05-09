@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 #####################################################################################
 # Copyright (c) 2021 Marijn Heule, Randal E. Bryant, Carnegie Mellon University
